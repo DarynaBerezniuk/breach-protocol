@@ -130,6 +130,7 @@ This project is not in development anymore, but maybe in the future I decide to 
 **Run**
 
 ```bash
+cd src
 python main.py
 ```
 
