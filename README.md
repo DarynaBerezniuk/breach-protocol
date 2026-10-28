@@ -56,14 +56,16 @@ The player picks codes from a matrix under specific movement rules, trying to co
 
 ```
 .
-├── main.py                  # Entry point: start-up screen, menus, game loop
-├── breach_protocol.py       # Game logic library
-├── ascii_art.py             # ASCII art, rules text, credits, logos
-├── main_menu.txt            # Frames of the main menu (one per selected button)
-├── resume_menu.txt          # Frames of the pause / resume menu
-├── grid_variations.txt      # Grid frames used for rendering
-└── sequence_variations.txt  # Sequence frames with progressive highlighting
- 
+├── Media/                           # Screenshots of the game
+├── src/
+│   ├── main.py                      # Entry point: start-up screen, menus, game loop
+│   ├── breach_protocol.py           # Game logic library
+│   ├── ascii_art.py                 # Text art, rules text, credits, logos
+│   ├── main_menu.txt                # Frames of the main menu (one per selected button)
+│   ├── resume_menu.txt              # Frames of the pause / resume menu
+│   ├── grid_variations.txt          # Grid frames used for rendering
+│   └── sequence_variations.txt      # Sequence frames with progressive highlighting
+└── README.md
 ```
 
 ## Documentation
