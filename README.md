@@ -96,16 +96,16 @@ The player picks codes from a matrix under specific movement rules, trying to co
 
 The game is written in **Python** and split into three modules:
 
-- **`main.py`** initializes the start-up screen, the game itself, and the menus, using functions from `breach_protocol.py`.
-- **`breach_protocol.py`** is a library of functions that implement the game: goal and path generation, grid generation, move registration, sequence checking, and the cross-platform `get_key()` and `clear_terminal()` helpers.
-- **`ascii_art.py`** contains the variables holding the artwork and text used in the game.
+- **`src/main.py`** initializes the start-up screen, the game itself, and the menus, using functions from `src/breach_protocol.py`.
+- **`src/breach_protocol.py`** is a library of functions that implement the game: goal and path generation, grid generation, move registration, sequence checking, and the cross-platform `get_key()` and `clear_terminal()` helpers.
+- **`src/ascii_art.py`** contains the variables holding the artwork and text used in the game.
 
 ### Implementation notes
 
 - **Sequence checking.** Checking whether the selected elements match a target sequence was the biggest challenge. It is solved with dictionaries that track which elements of each sequence have been selected correctly.
 - **Highlighting.** The highlighted sequence is represented by a dictionary showing which elements were selected correctly, so progress can be rendered in blue.
 - **Matrix generation.** The matrix is built so that it contains all the paths between the elements of the target sequences.
-- **Menus.** The menu images are stored in text files (`main_menu.txt`, `resume_menu.txt`), split into frames, and the frame matching the selected button is printed.
+- **Menus.** The menu images are stored in text files (`src/main_menu.txt`, `resume_menu.txt`), split into frames, and the frame matching the selected button is printed.
 - **Cross-platform support.** The `msvcrt` library, originally used to detect key presses, did not work on the testing platform. The game now checks the platform and defines `get_key()` and `clear_terminal()` accordingly, so keys can be read in real time on any supported system.
 
 ## Theoretical improvements
