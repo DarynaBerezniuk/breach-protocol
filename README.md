@@ -114,7 +114,8 @@ This project is not in development anymore, but maybe in the future I decide to 
 - Musical accompaniment;
 - Different text color for different terminals;
 - Tutorial stage and controls explanation before user can access the game;
-- Proper ASCII art for MacOS.
+- Proper ASCII art for MacOS;
+- Advanced matrix generator.
 
 ## Usage
 
